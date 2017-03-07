@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Amiko', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-size: 16px;
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 35px;
+}
+
+.main-text {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 20px;
+}
+
+.stars {
+    text-align: center;
+}
+
+.intro-text {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 20px;
+}
+
+.caption {
+    color: gray;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.credit {
+    font-weight: 400;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    /*this turns it into a circle*/
+    background-color: white;
+    border: solid black;
+    opacity: .75;
+    z-index: 3;
+    display: block;
+}
+
+#circle_headd {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 3%;
+    /*must be in percentage or will move on different devices*/
+    left: 42%;
+    /*must be in percentage or will move on different devices*/
+}
+
+#circle_handd {
+    /*background-color: purple*/
+    position: absolute;
+    top: 40%;
+    left: 87%;
+}
+
+#circle_heartd {
+    /*background-color: purple*/
+    position: absolute;
+    top: 34%;
+    left: 59%;
+}
+
+#circle_heartr {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 45%;
+    /* Must be in percentage or will move on different devices*/
+    left: 65%;
+    /* Must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+#circle_headr {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 7%;
+    /* Must be in percentage or will move on different devices*/
+    left: 50%;
+    /* Must be in percentage or will move on different devices*/
+}
+
+#circle_handr {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 80%;
+    /* Must be in percentage or will move on different devices*/
+    left: 72%;
+    /* Must be in percentage or will move on different devices*/
+}
+
+#circle_headj {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 17%;
+    /*must be in percentage or will move on different devices*/
+    left: 48%;
+    /*must be in percentage or will move on different devices*/
+}
+
+#circle_handj {
+    /*background-color: purple*/
+    position: absolute;
+    top: 25%;
+    left: 21%;
+}
+
+#circle_heartj {
+    /*background-color: purple*/
+    position: absolute;
+    top: 37%;
+    left: 59%;
+}
+
+#circle_heartj2 {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 33%;
+    /* Must be in percentage or will move on different devices*/
+    left: 63%;
+    /* Must be in percentage or will move on different devices*/
+    -webkit-transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in;
+    -o-transition: opacity 5s ease-in;
+    transition: opacity 5s ease-in;
+}
+
+#circle_headj2 {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 7%;
+    /* Must be in percentage or will move on different devices*/
+    left: 45%;
+    /* Must be in percentage or will move on different devices*/
+}
+
+#circle_handj2 {
+    /*background-color: purple;*/
+    position: absolute;
+    top: 69%;
+    /* Must be in percentage or will move on different devices*/
+    left: 57%;
+    /* Must be in percentage or will move on different devices*/
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+h3 {
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+.photo-container {
+    width: 100%;
+    position: relative;
+    ;
+    /*z-index:1;*/
+}
+
+.info_slides {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 175, 188, .75);
+    /* this is yellow, but with a translucent background */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 0;
+    /* While dial the z-index down because even if an element doesn't have opacity it still has 'mass'. The info window would get in the way of clicking on the circles without this */
+    transition: opacity .5s ease-in-out;
+    /* this gives us the fade in and fade out effect but only on the opacity element. You cannot use the display property with transitions. */
+}
+
+.info_slides.active {
+    z-index: 4;
+    /* We give the info_slides a higher z-index on active */
+    opacity: 1;
+}
+
+.info_popIn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 70px 15px 30px 15px;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    height: 100%;
+}
+
+.btn_close {
+    position: absolute;
+    font-family: sans-serif;
+    top: 5%;
+    left: 92%;
+    font-size: 2em;
+    color: white;
+    z-index: 4;
+    font-weight: 900;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    body {
+        line-height: 1;
+    }
+    .circle {
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        /*this turns it into a circle*/
+        background-color: white;
+        border: solid black;
+        opacity: .75;
+        z-index: 3;
+        display: block;
+    }
+    .caption {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .info_popIn {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 200px 15px 30px 15px;
+        font-size: 2em;
+        text-align: center;
+        color: black;
+        height: 100%;
+    }
+    #circle_handj2 {
+        /*background-color: purple;*/
+        position: absolute;
+        top: 78%;
+        /* Must be in percentage or will move on different devices*/
+        left: 57%;
+        /* Must be in percentage or will move on different devices*/
+    }
+}
+
+@media(min-width: 769px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .body {
+        line-height: 1;
+        margin: 100px 200px 100px 200px;
+    }
+    .photo-container {
+        margin: auto;
+        width: 600px;
+        height: 800px;
+        position: relative;
+        ;
+        /*z-index:1;*/
+    }
+    .circle:hover {
+        background-color: purple;
+    }
+    .btn_close {
+        font-size: 2em;
+    }
+    .btn_close:hover {
+        color: blue;
+    }
+}
