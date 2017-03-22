@@ -75,7 +75,7 @@ h1 {
 }
 
 .caption {
-    color: gray;
+    color: #808080;
     font-size: 1em;
     margin-left: 10px;
 }
@@ -89,8 +89,8 @@ h1 {
     height: 20px;
     border-radius: 100px;
     /*this turns it into a circle*/
-    background-color: white;
-    border: solid black;
+    background-color: #FFFFFF;
+    border: solid #000000;
     opacity: .75;
     z-index: 3;
     display: block;
@@ -249,7 +249,7 @@ h3 {
     padding: 70px 15px 30px 15px;
     font-size: 1.5em;
     text-align: center;
-    color: black;
+    color: #000000;
     height: 100%;
 }
 
@@ -259,7 +259,7 @@ h3 {
     top: 5%;
     left: 92%;
     font-size: 2em;
-    color: white;
+    color: #FFFFFF;
     z-index: 4;
     font-weight: 900;
 }
@@ -282,8 +282,8 @@ img {
         height: 35px;
         border-radius: 100px;
         /*this turns it into a circle*/
-        background-color: white;
-        border: solid black;
+        background-color: #FFFFFF;
+        border: solid #000000;
         opacity: .75;
         z-index: 3;
         display: block;
@@ -299,7 +299,7 @@ img {
         padding: 200px 15px 30px 15px;
         font-size: 2em;
         text-align: center;
-        color: black;
+        color: #000000;
         height: 100%;
     }
     #circle_handj2 {
@@ -327,12 +327,12 @@ img {
         /*z-index:1;*/
     }
     .circle:hover {
-        background-color: purple;
+        background-color: #800080;
     }
     .btn_close {
         font-size: 2em;
     }
     .btn_close:hover {
-        color: blue;
+        color: #0000FF;
     }
 }
